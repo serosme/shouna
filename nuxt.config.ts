@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Attic',
+      title: 'Shouna',
       htmlAttrs: {
         lang: 'en',
       },
