@@ -3,6 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "prepare": "pnpx skills experimental_sync -y",
     "typecheck": "nuxt typecheck",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -35,5 +36,9 @@
     "typescript": "6.0.3",
     "vue-tsc": "3.3.14",
     "wrangler": "4.164.0"
-  }
+  },
+  "skills": [
+    "nuxt/ui",
+    { "source": "cloudflare/skills", "skills": ["cloudflare", "wrangler"] }
+  ]
 }
