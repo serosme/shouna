@@ -7,3 +7,9 @@
     cursor: pointer;
   }
 }
+
+:focus-visible,
+:focus-visible::before,
+*:has(*:focus-visible) {
+  outline: none;
+}
