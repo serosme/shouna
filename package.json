@@ -15,30 +15,36 @@
     "deploy": "cross-env NITRO_PRESET=cloudflare_module nuxt build && wrangler deploy --keep-vars && wrangler --config .output/server/wrangler.json d1 migrations apply DB --remote"
   },
   "dependencies": {
-    "@internationalized/date": "3.12.4",
-    "@libsql/client": "0.18.0",
-    "@nuxt/ui": "4.13.1",
-    "@nuxthub/core": "0.10.12",
-    "drizzle-orm": "0.45.4",
-    "nuxt": "4.7.0",
-    "tailwindcss": "4.3.5",
-    "vue": "3.5.46",
-    "vue-router": "5.5.1",
-    "zod": "4.6.7"
+    "@internationalized/date": "^3.12.4",
+    "@libsql/client": "^0.18.0",
+    "@nuxt/ui": "^4.13.1",
+    "@nuxthub/core": "^0.10.13",
+    "drizzle-orm": "^0.45.4",
+    "nuxt": "^4.7.0",
+    "tailwindcss": "^4.3.5",
+    "vue": "^3.5.46",
+    "vue-router": "^5.5.3",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "10.0.0",
-    "@iconify-json/lucide": "1.2.159",
-    "cross-env": "10.1.0",
-    "drizzle-kit": "0.31.11",
-    "eslint": "10.15.0",
-    "eslint-plugin-format": "2.0.1",
-    "typescript": "6.0.3",
-    "vue-tsc": "3.3.14",
-    "wrangler": "4.168.0"
+    "@antfu/eslint-config": "^10.0.0",
+    "@iconify-json/lucide": "^1.2.160",
+    "cross-env": "^10.1.0",
+    "drizzle-kit": "^0.31.11",
+    "eslint": "^10.15.0",
+    "eslint-plugin-format": "^2.0.1",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.14",
+    "wrangler": "^4.168.0"
   },
   "skills": [
     "nuxt/ui",
-    { "source": "cloudflare/skills", "skills": ["cloudflare", "wrangler"] }
+    {
+      "source": "cloudflare/skills",
+      "skills": [
+        "cloudflare",
+        "wrangler"
+      ]
+    }
   ]
 }
